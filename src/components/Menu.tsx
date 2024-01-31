@@ -7,7 +7,7 @@ const Icon = () => (
     className="h-6 w-6"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    enable-background="new 0 0 12 12"
+    enableBackground="new 0 0 12 12"
     id="Слой_1"
     version="1.1"
     viewBox="0 0 12 12"
@@ -43,14 +43,14 @@ const Logo = () => (
       fill="black"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M277.5 79C298.763 79 316 61.763 316 40.5C316 19.237 298.763 2 277.5 2C256.237 2 239 19.237 239 40.5C239 61.763 256.237 79 277.5 79ZM277.403 65.1595C290.968 65.1595 301.965 54.1627 301.965 40.5975C301.965 27.0322 290.968 16.0354 277.403 16.0354C263.837 16.0354 252.841 27.0322 252.841 40.5975C252.841 54.1627 263.837 65.1595 277.403 65.1595Z"
       fill="black"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M583.5 77C604.763 77 622 59.763 622 38.5C622 17.237 604.763 0 583.5 0C562.237 0 545 17.237 545 38.5C545 59.763 562.237 77 583.5 77ZM583.403 63.1595C596.968 63.1595 607.965 52.1627 607.965 38.5975C607.965 25.0322 596.968 14.0354 583.403 14.0354C569.837 14.0354 558.841 25.0322 558.841 38.5975C558.841 52.1627 569.837 63.1595 583.403 63.1595Z"
       fill="black"
     />
@@ -142,7 +142,7 @@ const Logo = () => (
 
 export const Menu = () => (
   <Dialog.Root>
-    <Dialog.Trigger className="absolute right-2 top-2 flex h-12 w-12 items-center justify-center rounded-full bg-white">
+    <Dialog.Trigger className="absolute right-2 top-2 flex h-12 w-12 items-center justify-center rounded-full bg-white xl:hidden">
       <Icon />
     </Dialog.Trigger>
     <Dialog.Portal>
