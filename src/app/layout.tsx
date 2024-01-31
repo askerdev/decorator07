@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: Readonly<PropsWithChildren>) => (
   <html lang="ru">
-    <body className={GilroyFont.className}>
+    <body className={`${GilroyFont.className} w-[100vw] overflow-x-hidden`}>
       {children}
       <Menu />
     </body>

@@ -4,7 +4,7 @@ import { Container } from "@/components/Container";
 
 export const HistorySection = () => (
   <section className="relative flex w-full flex-col items-center overflow-hidden bg-white">
-    <Container className="relative items-center px-2.5 pb-[79px] pt-[45px]">
+    <Container className="relative items-center px-2.5 pb-[79px] pt-[45px] md:px-5">
       <div className="flex w-full items-center justify-center xl:justify-between">
         <div className="flex flex-col items-center gap-4 md:gap-8 lg:items-start">
           <h1 className="flex flex-col gap-3 text-3xl font-bold sm:text-5xl">

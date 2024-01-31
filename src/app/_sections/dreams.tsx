@@ -5,7 +5,7 @@ import { Container } from "@/components/Container";
 export const DreamsSection = () => (
   <section className="relative flex w-full flex-col items-center bg-white">
     <Container className="items-center px-2.5 pt-20 md:pb-40">
-      <div className="flex w-full flex-col items-center gap-10 md:justify-between xl:flex-row">
+      <div className="flex w-full flex-col items-center gap-10 md:justify-between md:px-8 lg:flex-row">
         <div className="flex max-w-[442px] flex-col gap-3">
           <h1 className="flex flex-col gap-3 text-3xl font-bold sm:text-5xl">
             ЕСЛИ УЖ МЕЧТАТЬ,
