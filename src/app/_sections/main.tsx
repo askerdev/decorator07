@@ -5,7 +5,7 @@ import { PhotoGrid } from "@/components/PhotoGrid";
 import { Wave } from "@/components/Wave";
 
 export const MainSection = () => (
-  <section className="relative w-full bg-[url('/images/hero_background.png')] bg-center">
+  <section className="relative w-full bg-[url('/images/hero_background.png')] bg-cover bg-center bg-no-repeat">
     <div className="flex h-full w-full flex-col items-center bg-[linear-gradient(to_bottom,rgba(32,36,31,0.8),rgba(32,36,31,0.8))]">
       <Container>
         <Header />

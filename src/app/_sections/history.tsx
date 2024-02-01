@@ -7,13 +7,13 @@ export const HistorySection = () => (
     <Container className="relative items-center px-2.5 pb-[79px] pt-[45px] md:px-5">
       <div className="flex w-full items-center justify-center xl:justify-between">
         <div className="flex flex-col items-center gap-4 md:gap-8 lg:items-start">
-          <h1 className="flex flex-col gap-3 text-3xl font-bold sm:text-5xl">
+          <h2 className="flex flex-col gap-3 text-3xl font-bold sm:text-5xl">
             <div className="flex items-center gap-3">
               <span className="h-[5px] w-[145px] bg-black md:w-[210px]" />
               ИСТОРИЯ
             </div>
             ОДНОГО ИНТЕРЬЕРА
-          </h1>
+          </h2>
           <div className="h-[200px] w-[300px] bg-black sm:h-[300px] sm:w-[480px]"></div>
           <img
             className="w-full max-w-[480px] lg:hidden"

@@ -142,12 +142,12 @@ const Logo = () => (
 
 export const Menu = () => (
   <Dialog.Root>
-    <Dialog.Trigger className="absolute right-2 top-2 flex h-12 w-12 items-center justify-center rounded-full bg-white xl:hidden">
+    <Dialog.Trigger className="fixed right-2 top-2 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-white xl:hidden">
       <Icon />
     </Dialog.Trigger>
     <Dialog.Portal>
-      <Dialog.Overlay className="absolute h-screen w-screen bg-black bg-opacity-40" />
-      <Dialog.Content className="absolute right-0 h-screen w-64 bg-[#D1DCCE] px-6 pb-6 pt-11 data-[state=closed]:duration-300 data-[state=open]:duration-300 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right">
+      <Dialog.Overlay className="fixed top-0 z-50 h-screen w-screen bg-black bg-opacity-40" />
+      <Dialog.Content className="fixed right-0 top-0 z-50 h-screen w-64 bg-[#D1DCCE] px-6 pb-6 pt-11 data-[state=closed]:duration-300 data-[state=open]:duration-300 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right">
         <Dialog.Close className="absolute right-3 top-4 h-6 w-6">
           <div className="h-[2px] w-6 translate-y-1/2 rotate-45 bg-black" />
           <div className="h-[2px] w-6 -translate-y-1/2 -rotate-45 bg-black" />
