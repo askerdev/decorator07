@@ -1,11 +1,13 @@
+import { cn } from "@/utils";
 import { ComponentProps } from "react";
 
 type Props = {
   pathProps?: ComponentProps<"path">;
 } & ComponentProps<"svg">;
 
-export const Wave = ({ pathProps, ...props }: Props) => (
+export const Wave = ({ pathProps, className, ...props }: Props) => (
   <svg
+    className={cn("scale-x-125", className)}
     {...props}
     xmlns="http://www.w3.org/2000/svg"
     width="1870"

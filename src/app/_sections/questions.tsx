@@ -6,9 +6,12 @@ import { Wave } from "@/components/Wave";
 export const QuestionsSection = () => (
   <section
     id="questions"
-    className="relative flex w-full flex-col items-center bg-[#D1DCCEE5]"
+    className="relative flex w-full flex-col items-center bg-[#D1DCCEE5] py-[100px]"
   >
-    <Container className="px-2 py-[32px] pb-[132px] lg:pt-[56px]">
+    <div className="absolute -top-[1px] w-[100vw] -scale-y-100 overflow-hidden">
+      <Wave />
+    </div>
+    <Container className="px-2 py-8 lg:pt-[56px]">
       <div className="flex flex-col items-center gap-9">
         <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-between lg:gap-8">
           <div className="flex flex-col gap-8">
