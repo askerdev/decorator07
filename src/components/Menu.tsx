@@ -157,19 +157,31 @@ export const Menu = () => (
             <Logo />
             <ul className="space-y-4 text-xl">
               <li>
-                <a>Ассортимент</a>
+                <a href="#assortment">
+                  <Dialog.Close>Ассортимент</Dialog.Close>
+                </a>
               </li>
               <li>
-                <a>История одного интерьера</a>
+                <a href="#history">
+                  <Dialog.Close className="text-left">
+                    История одного интерьера
+                  </Dialog.Close>
+                </a>
               </li>
               <li>
-                <a>Примеры</a>
+                <a href="#interiors">
+                  <Dialog.Close>Примеры</Dialog.Close>
+                </a>
               </li>
               <li>
-                <a>Отзывы</a>
+                <a href="#reviews">
+                  <Dialog.Close>Отзывы</Dialog.Close>
+                </a>
               </li>
               <li>
-                <a>Блог</a>
+                <a href="#">
+                  <Dialog.Close>Блог</Dialog.Close>
+                </a>
               </li>
               <li>
                 <a href="tel:79289124545">+7 (928) 912-45-45</a>

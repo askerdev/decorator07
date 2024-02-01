@@ -25,7 +25,10 @@ const Review = ({
 );
 
 export const ReviewsSection = () => (
-  <section className="relative w-full bg-[url('/images/reviews.jpeg')]">
+  <section
+    id="reviews"
+    className="relative w-full bg-[url('/images/reviews.jpeg')]"
+  >
     <div className="flex h-full w-full justify-center bg-[linear-gradient(to_bottom,rgba(32,36,31,0.8),rgba(32,36,31,0.8))] pb-[100px]">
       <div className="absolute -top-1 w-[100vw] -scale-y-100 overflow-hidden">
         <Wave pathProps={{ className: "fill-[#FAFAFA]" }} />

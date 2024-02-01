@@ -1,4 +1,4 @@
-import { FooterSection } from "./_sections/Footer";
+import { FooterSection } from "./_sections/footer";
 import { AssortmentSection } from "./_sections/assortment";
 import { DreamsSection } from "./_sections/dreams";
 import { HistorySection } from "./_sections/history";

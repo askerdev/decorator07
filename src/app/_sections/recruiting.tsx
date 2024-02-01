@@ -4,7 +4,10 @@ import { Container } from "@/components/Container";
 import { Wave } from "@/components/Wave";
 
 export const RecruitingSection = () => (
-  <section className="relative flex w-[100vw] justify-center overflow-x-hidden bg-white pb-[157px] pt-[57px] lg:pb-[200px] lg:pt-[100px]">
+  <section
+    id="recruiting"
+    className="relative flex w-[100vw] justify-center overflow-x-hidden bg-white pb-[157px] pt-[57px] lg:pb-[200px] lg:pt-[100px]"
+  >
     <div className="absolute -bottom-[1px] w-[100vw] overflow-hidden">
       <Wave pathProps={{ className: "fill-[#D1DCCEE5]" }} />
     </div>

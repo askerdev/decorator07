@@ -11,19 +11,19 @@ export const Header = () => (
     <div className="hidden items-center gap-14 xl:flex">
       <ul className="flex gap-6 text-base font-medium text-white">
         <li>
-          <a>Ассортимент</a>
+          <a href="#assortment">Ассортимент</a>
         </li>
         <li>
-          <a>История одного интерьера</a>
+          <a href="#history">История одного интерьера</a>
         </li>
         <li>
-          <a>Примеры</a>
+          <a href="#interiors">Примеры</a>
         </li>
         <li>
-          <a>Отзывы</a>
+          <a href="#reviews">Отзывы</a>
         </li>
         <li>
-          <a>Блог</a>
+          <a href="#">Блог</a>
         </li>
       </ul>
 
