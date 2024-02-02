@@ -6,7 +6,7 @@ export const DreamsSection = () => (
   <section className="relative flex w-full flex-col items-center bg-white">
     <Container className="items-center px-2.5 pb-[20px] pt-20 md:pb-[260px] md:pt-40">
       <div className="flex w-full flex-col items-center gap-10 md:justify-between md:px-8 lg:flex-row">
-        <div className="flex max-w-[442px] flex-col gap-3">
+        <div className="flex w-full max-w-[442px] flex-col gap-3">
           <h2 className="flex flex-col gap-3 text-3xl font-bold sm:text-5xl">
             ЕСЛИ УЖ МЕЧТАТЬ,
             <div className="flex items-center gap-3">

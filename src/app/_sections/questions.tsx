@@ -8,7 +8,7 @@ export const QuestionsSection = () => (
     id="questions"
     className="relative flex w-full flex-col items-center bg-[#D1DCCEE5] py-[100px]"
   >
-    <div className="absolute -top-[1px] w-[100vw] -scale-y-100 overflow-hidden">
+    <div className="absolute -top-[1px] flex w-[100vw] -scale-y-100 flex-col items-center overflow-hidden">
       <Wave />
     </div>
     <Container className="px-2 py-8 lg:pt-[56px]">
@@ -50,7 +50,7 @@ export const QuestionsSection = () => (
         </Button>
       </div>
     </Container>
-    <div className="absolute -bottom-[1px] w-[100vw] overflow-hidden">
+    <div className="absolute -bottom-[1px] flex w-[100vw] flex-col items-center overflow-hidden">
       <Wave pathProps={{ className: "fill-[#9BB395]" }} />
     </div>
   </section>

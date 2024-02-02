@@ -15,7 +15,7 @@ export const InteriorsSection = () => {
       id="interiors"
       className="relative flex w-screen flex-col items-center bg-[#FAFAFA] pb-4 lg:pb-20"
     >
-      <div className="absolute top-0 w-[100vw] -scale-y-100 overflow-hidden">
+      <div className="absolute top-0 flex w-[100vw] -scale-y-100 flex-col items-center overflow-hidden">
         <Wave />
       </div>
       <Container className="px-2 pt-[150px]">
