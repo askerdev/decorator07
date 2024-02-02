@@ -1,6 +1,5 @@
 import { v4 as uuid } from "uuid";
 import { AssortmentItemBig, AssortmentItemSmall } from "./item";
-import { Icons } from "./icons";
 
 export type Properties = {
   title: string;

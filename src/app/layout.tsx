@@ -5,6 +5,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Menu } from "@/components/Menu";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: 'Интерьерный салон "Декоратор"',
@@ -25,6 +26,9 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: Readonly<PropsWithChildren>) => (
   <html lang="ru">
+    <head>
+      <Script src="https://smtpjs.com/v3/smtp.js"></Script>
+    </head>
     <body
       className={`${GilroyFont.className} w-[100vw] overflow-x-hidden scroll-smooth`}
     >

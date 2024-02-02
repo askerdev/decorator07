@@ -35,17 +35,17 @@ export const AssortmentSection = () => (
           {assortment[0]}
         </div>
         <div className="flex flex-col gap-6 lg:gap-[60px]">
-          <div className="flex flex-col items-center gap-6 xl:flex-row xl:justify-center">
+          <div className="flex flex-wrap items-center justify-center gap-6">
             {assortment[1]}
             {assortment[2]}
             {assortment[3]}
           </div>
-          <div className="flex flex-col items-center gap-6 xl:flex-row xl:justify-center">
+          <div className="flex flex-wrap items-center justify-center gap-6">
             {assortment[4]}
             {assortment[5]}
             {assortment[6]}
           </div>
-          <div className="flex flex-col items-center gap-6 xl:flex-row xl:justify-center">
+          <div className="flex flex-wrap items-center justify-center gap-6">
             {assortment[7]}
             {assortment[8]}
             {assortment[9]}
