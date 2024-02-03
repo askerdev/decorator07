@@ -18,7 +18,7 @@ export const assortment: JSX.Element[] = [
   <AssortmentItemBig
     key={uuid()}
     title="Обои"
-    images={["/images/assortment/1/1.jpg"]}
+    images={["/images/assortment/1/1.jpg", "/images/assortment/4/1.jpg"]}
     price={1200}
     properties={[
       {

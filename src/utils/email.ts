@@ -9,26 +9,18 @@ declare module Email {
     Body: string;
   };
 
-  export function send(args: TSendProps): void;
+  export function send(args: TSendProps): Promise<void>;
 }
 
-type TProps = {
-  name: string;
-  phone: string;
-  type: string;
-  isIndividuals: boolean;
-  registered: boolean;
-};
+const email = "nalchikdecorator@gmail.com";
 
-const email = "test@gmail.com";
-
-export const send = () =>
+export const send = ({ phone, name }: { phone: string; name: string }) =>
   Email.send({
     Host: "smtp.elasticemail.com",
     Username: email,
-    Password: "pass",
+    Password: "74F28A3438A8A35537EFF4799C53023E4A3A",
     To: email,
     From: email,
     Subject: "Обратная связь",
-    Body: `Test`,
+    Body: `<h3>Обратная связь из сайта</h3><br /><p><br />Имя: ${name}<br />Телефон: ${phone}</p>`,
   });

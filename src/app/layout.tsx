@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Menu } from "@/components/Menu";
 import Script from "next/script";
+import { FormModalContextProvider } from "@/state/FormModalContenxt";
 
 export const metadata: Metadata = {
   title: 'Интерьерный салон "Декоратор"',
@@ -32,7 +33,7 @@ const RootLayout = ({ children }: Readonly<PropsWithChildren>) => (
     <body
       className={`${GilroyFont.className} w-[100vw] overflow-x-hidden scroll-smooth`}
     >
-      {children}
+      <FormModalContextProvider>{children}</FormModalContextProvider>
     </body>
     <GoogleAnalytics gaId="GTM-P23G9N" />
   </html>

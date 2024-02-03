@@ -8,27 +8,25 @@ import { MainSection } from "./_sections/main";
 import { QuestionsSection } from "./_sections/questions";
 import { RecruitingSection } from "./_sections/recruiting";
 import { ReviewsSection } from "./_sections/reviews";
-import { useCallback, useState } from "react";
-import { Modal } from "@/components/Modal";
+import { FormModal } from "@/components/Modal";
 import { Menu } from "@/components/Menu";
+import { useFormModal } from "@/state/FormModalContenxt";
 
 const Page = () => {
-  const [open, setOpen] = useState(false);
-
-  const openModal = useCallback(() => setOpen(true), []);
+  const { isOpen, setOpen } = useFormModal();
 
   return (
     <>
-      <Menu open={open} />
-      <Modal open={open} setOpen={setOpen} />
-      <MainSection open={openModal} />
-      <DreamsSection open={openModal} />
-      <AssortmentSection open={openModal} />
+      <Menu open={isOpen} />
+      <FormModal open={isOpen} setOpen={setOpen} />
+      <MainSection />
+      <DreamsSection />
+      <AssortmentSection />
       <HistorySection />
       <InteriorsSection />
       <ReviewsSection />
-      <RecruitingSection open={openModal} />
-      <QuestionsSection open={openModal} />
+      <RecruitingSection />
+      <QuestionsSection />
       <FooterSection />
     </>
   );

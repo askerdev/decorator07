@@ -7,6 +7,7 @@ import useEmblaCarousel, {
 
 import { cn } from "@/utils";
 import { Button } from "@/components/Button";
+import { v4 as uuid } from "uuid";
 
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
@@ -246,6 +247,48 @@ const CarouselNext = React.forwardRef<
 });
 CarouselNext.displayName = "CarouselNext";
 
+const CarouselDots = React.forwardRef<
+  HTMLButtonElement,
+  React.ComponentProps<typeof Button>
+>(({ className, ...props }, ref) => {
+  const { api } = useCarousel();
+  const [current, setCurrent] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!api) return;
+
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("pointerUp", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
+  return (
+    <div className="mt-3 flex w-full items-center justify-center">
+      {api?.scrollSnapList().map((n) => (
+        <button
+          onClick={() => {
+            if (!api) return;
+
+            api.scrollTo(n);
+            setCurrent(n + 1);
+          }}
+          key={uuid()}
+          className="flex h-6 w-6 items-center justify-center"
+        >
+          <div
+            className={cn("h-3 w-3 rounded-full bg-gray-400", {
+              "h-4 w-4 bg-black": n + 1 === current,
+            })}
+          />
+        </button>
+      ))}
+    </div>
+  );
+});
+CarouselDots.displayName = "CarouselDots";
+
 export {
   type CarouselApi,
   Carousel,
@@ -253,6 +296,7 @@ export {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
+  CarouselDots,
 };
 
 export const ArrowIcon = (props: React.ComponentProps<"svg">) => (
