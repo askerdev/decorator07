@@ -18,7 +18,7 @@ export const send = ({ phone, name }: { phone: string; name: string }) =>
   Email.send({
     Host: "smtp.elasticemail.com",
     Username: email,
-    Password: "74F28A3438A8A35537EFF4799C53023E4A3A",
+    Password: process.env.NEXT_PUBLIC_ELASTIC_TOKEN!,
     To: email,
     From: email,
     Subject: "Обратная связь",
