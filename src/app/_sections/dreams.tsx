@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button } from "@/components/Button";
 import { Container } from "@/components/Container";
+import { ModalProps } from "./props";
 
-export const DreamsSection = () => (
+export const DreamsSection = ({ open }: ModalProps) => (
   <section className="relative flex w-full flex-col items-center bg-white">
     <Container className="items-center px-2.5 pb-[20px] pt-20 md:pb-[260px] md:pt-40">
       <div className="flex w-full flex-col items-center gap-10 md:justify-between md:px-8 lg:flex-row">
@@ -19,7 +20,10 @@ export const DreamsSection = () => (
             материалы и стиль интерьера. Либо пользоваться рекомендациями нашего
             дизайнера.
           </p>
-          <Button className="mt-4 hidden px-8 py-4 shadow-none md:flex">
+          <Button
+            onClick={open}
+            className="mt-4 hidden px-8 py-4 shadow-none md:flex"
+          >
             Задать вопрос
           </Button>
         </div>
@@ -42,7 +46,9 @@ export const DreamsSection = () => (
           />
         </div>
       </div>
-      <Button className="mt-12 shadow-none md:hidden">Задать вопрос</Button>
+      <Button onClick={open} className="mt-12 shadow-none md:hidden">
+        Задать вопрос
+      </Button>
     </Container>
   </section>
 );

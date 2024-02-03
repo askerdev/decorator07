@@ -2,8 +2,9 @@ import { Button } from "@/components/Button";
 import { Container } from "@/components/Container";
 import { Wave } from "@/components/Wave";
 import { assortment } from "./assortment";
+import { ModalProps } from "../props";
 
-export const AssortmentSection = () => (
+export const AssortmentSection = ({ open }: ModalProps) => (
   <section
     id="assortment"
     className="relative flex w-full flex-col items-center bg-[rgba(209,220,206,0.90)] py-[100px]"
@@ -30,7 +31,9 @@ export const AssortmentSection = () => (
                 ассортименту воспользуйтесь консультацией наших дизайнеров
               </p>
             </div>
-            <Button className="bg-white">Задать вопрос</Button>
+            <Button onClick={open} className="bg-white">
+              Задать вопрос
+            </Button>
           </div>
           {assortment[0]}
         </div>

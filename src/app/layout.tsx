@@ -33,7 +33,6 @@ const RootLayout = ({ children }: Readonly<PropsWithChildren>) => (
       className={`${GilroyFont.className} w-[100vw] overflow-x-hidden scroll-smooth`}
     >
       {children}
-      <Menu />
     </body>
     <GoogleAnalytics gaId="GTM-P23G9N" />
   </html>

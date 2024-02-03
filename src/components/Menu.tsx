@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "@/utils";
 import * as Dialog from "@radix-ui/react-dialog";
 
 const Icon = () => (
@@ -140,9 +141,16 @@ const Logo = () => (
   </svg>
 );
 
-export const Menu = () => (
+export const Menu = ({ open }: { open: boolean }) => (
   <Dialog.Root>
-    <Dialog.Trigger className="fixed right-2 top-2 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-white xl:hidden">
+    <Dialog.Trigger
+      className={cn(
+        "fixed right-2 top-2 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-white xl:hidden",
+        {
+          hidden: open,
+        },
+      )}
+    >
       <Icon />
     </Dialog.Trigger>
     <Dialog.Portal>

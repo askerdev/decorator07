@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button } from "@/components/Button";
 import { Container } from "@/components/Container";
-import { Wave } from "@/components/Wave";
+import { ModalProps } from "./props";
 
-export const RecruitingSection = () => (
+export const RecruitingSection = ({ open }: ModalProps) => (
   <section
     id="recruiting"
     className="relative flex w-[100vw] justify-center overflow-x-hidden bg-white pb-[57px] pt-[57px] lg:py-[100px]"
@@ -31,7 +31,7 @@ export const RecruitingSection = () => (
           <p className="max-w-[260px] text-xl lg:text-lg">
             Свяжитесь с нами, а мы сделаем вам предложение
           </p>
-          <Button>Задать вопрос</Button>
+          <Button onClick={open}>Задать вопрос</Button>
         </div>
       </div>
     </Container>

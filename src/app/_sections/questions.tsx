@@ -2,8 +2,9 @@
 import { Button } from "@/components/Button";
 import { Container } from "@/components/Container";
 import { Wave } from "@/components/Wave";
+import { ModalProps } from "./props";
 
-export const QuestionsSection = () => (
+export const QuestionsSection = ({ open }: ModalProps) => (
   <section
     id="questions"
     className="relative flex w-full flex-col items-center bg-[#D1DCCEE5] py-[100px]"
@@ -18,7 +19,9 @@ export const QuestionsSection = () => (
             <h2 className="max-w-[561px] text-center text-2xl font-bold text-black sm:text-4xl lg:text-left xl:text-[42px] xl:leading-[54px]">
               ПОМОЖЕМ С ДИЗАЙНОМ, ПОДБОРОМ МАТЕРИАЛОВ И ЛЮБЫМИ ВОПРОСАМИ
             </h2>
-            <Button className="hidden bg-white lg:flex">Задать вопрос</Button>
+            <Button onClick={open} className="hidden bg-white lg:flex">
+              Задать вопрос
+            </Button>
           </div>
           <div className="flex gap-6 md:gap-10">
             <div className="flex flex-col items-start gap-5">
@@ -45,7 +48,10 @@ export const QuestionsSection = () => (
             </div>
           </div>
         </div>
-        <Button className="h-[60px] w-[260px] bg-white lg:hidden">
+        <Button
+          onClick={open}
+          className="h-[60px] w-[260px] bg-white lg:hidden"
+        >
           Задать вопрос
         </Button>
       </div>
