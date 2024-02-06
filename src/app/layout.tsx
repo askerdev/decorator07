@@ -4,7 +4,6 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Menu } from "@/components/Menu";
 import Script from "next/script";
 import { FormModalContextProvider } from "@/state/FormModalContenxt";
 
