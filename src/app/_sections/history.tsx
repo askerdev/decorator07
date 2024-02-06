@@ -33,7 +33,12 @@ export const HistorySection = () => (
             </div>
             ОДНОГО ИНТЕРЬЕРА
           </h2>
-          <div className="h-[200px] w-[300px] bg-black sm:h-[300px] sm:w-[480px]"></div>
+          <iframe
+            className="h-[200px] w-[300px] sm:h-[300px] sm:w-[480px]"
+            src="https://www.youtube.com/embed/aY3dOwssw0c?list=TLGGNQn-H5tOonowNjAyMjAyNA"
+            title="Отзыв Ася"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
           <img
             className="w-full max-w-[480px] lg:hidden"
             src="/images/history.png"
