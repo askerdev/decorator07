@@ -5,7 +5,7 @@ export const Header = () => (
     <div className="flex flex-col items-center gap-3">
       <Logo />
       <address className="text-sm not-italic text-white xl:hidden">
-        г. Нальчик, ул. Ахохова, 183
+        г. Нальчик, ул. Кирова 1В
       </address>
     </div>
     <div className="hidden items-center gap-14 xl:flex">
@@ -30,7 +30,7 @@ export const Header = () => (
       <div>
         <address className="flex flex-col text-center text-base font-medium not-italic text-white">
           <span>г. Нальчик</span>
-          <span>ул. Ахохова, 183</span>
+          <span>ул. Кирова 1В</span>
         </address>
       </div>
       <a className="text-lg font-bold text-white">+7 (928) 912-45-45</a>

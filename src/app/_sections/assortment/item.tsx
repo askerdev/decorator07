@@ -272,23 +272,27 @@ export const AssortmentItemSmall = ({
         properties={properties}
         description={description}
       />
-      <img width={294} className="rounded-xl" src={images[0]} alt={title} />
+      <img
+        className="h-[294px] w-[294px] rounded-xl object-cover"
+        src={images[0]}
+        alt={title}
+      />
       <div className="flex flex-col items-start px-2.5">
         <h3 className="text-xl font-bold">{title}</h3>
-        <div className="flex flex-col items-start gap-2">
-          <p className="flex items-center gap-2 text-xl">
+        <div className="flex flex-col items-start gap-2 text-base">
+          <p className="flex items-center gap-2">
             <span>{Icons.lineDark}</span>
             <span>{properties[0].title}</span>
           </p>
-          <p className="flex items-center gap-2 text-xl">
+          <p className="flex items-center gap-2">
             <span>{Icons.arrowsDark}</span>
             <span>{properties[1].title}</span>
           </p>
-          <p className="flex items-center gap-2 text-xl">
+          <p className="flex items-center gap-2">
             <span>{Icons.calendarDark}</span>
             <span>{properties[2].title}</span>
           </p>
-          <p className="flex items-center gap-2 text-xl">
+          <p className="flex items-center gap-2">
             <span>{Icons.money}</span>
             <span className="font-bold">от {price} ₽</span>
           </p>

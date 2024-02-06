@@ -199,7 +199,7 @@ export const Menu = ({ open }: { open: boolean }) => (
 
           <div className="flex flex-col gap-6">
             <address className="text-sm not-italic">
-              г. Нальчик, ул. Ахохова, 183
+              г. Нальчик, ул. Кирова 1В
             </address>
             <a
               href="tel:79289124545"

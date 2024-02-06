@@ -16,7 +16,7 @@ export const AssortmentSection = () => {
         <Wave />
       </div>
       <Container className="px-2 pb-16 pt-8 lg:py-[70px]">
-        <div className="flex flex-col gap-[60px]">
+        <div className="flex flex-col gap-6 lg:gap-[60px]">
           <div className="flex flex-col items-center gap-20 xl:flex-row xl:justify-between">
             <div className="flex flex-col gap-8">
               <div className="flex flex-col">

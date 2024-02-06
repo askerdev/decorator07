@@ -10,7 +10,7 @@ export const FooterSection = () => (
           <a className="text-lg font-bold text-white">+7 (928) 912-45-45</a>
           <div className="flex flex-col text-sm text-white">
             <address className="not-italic  text-white">
-              г. Нальчик, ул. Ахохова, 183
+              г. Нальчик, ул. Кирова 1В
             </address>
             без перерыва и выходных
           </div>
