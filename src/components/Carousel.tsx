@@ -264,22 +264,26 @@ const CarouselDots = React.forwardRef<
     });
   }, [api]);
 
+  React.useEffect(() => {
+    console.log(current);
+  }, [current]);
+
   return (
     <div className="mt-3 flex w-full items-center justify-center">
-      {api?.scrollSnapList().map((n) => (
+      {api?.scrollSnapList().map((n, idx) => (
         <button
           onClick={() => {
             if (!api) return;
 
-            api.scrollTo(n);
-            setCurrent(n + 1);
+            api.scrollTo(idx);
+            setCurrent(idx + 1);
           }}
           key={uuid()}
           className="flex h-6 w-6 items-center justify-center"
         >
           <div
             className={cn("h-3 w-3 rounded-full bg-gray-400", {
-              "h-4 w-4 bg-black": n + 1 === current,
+              "h-4 w-4 bg-black": idx + 1 === current,
             })}
           />
         </button>
