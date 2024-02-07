@@ -3,7 +3,7 @@ import { GilroyFont } from "@/fonts";
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { GoogleAnalytics } from "@next/third-parties/google";
+// import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
 import { FormModalContextProvider } from "@/state/FormModalContenxt";
 
@@ -34,7 +34,7 @@ const RootLayout = ({ children }: Readonly<PropsWithChildren>) => (
     >
       <FormModalContextProvider>{children}</FormModalContextProvider>
     </body>
-    <GoogleAnalytics gaId="GTM-P23G9N" />
+    {/* <GoogleAnalytics gaId="GTM-P23G9N" /> */}
   </html>
 );
 
