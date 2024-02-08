@@ -85,19 +85,6 @@ const Carousel = React.forwardRef<
       api?.scrollNext();
     }, [api]);
 
-    const handleKeyDown = React.useCallback(
-      (event: React.KeyboardEvent<HTMLDivElement>) => {
-        if (event.key === "ArrowLeft") {
-          event.preventDefault();
-          scrollPrev();
-        } else if (event.key === "ArrowRight") {
-          event.preventDefault();
-          scrollNext();
-        }
-      },
-      [scrollPrev, scrollNext],
-    );
-
     React.useEffect(() => {
       if (!api || !setApi) {
         return;
@@ -136,7 +123,6 @@ const Carousel = React.forwardRef<
       >
         <div
           ref={ref}
-          onKeyDownCapture={handleKeyDown}
           className={cn("relative", className)}
           role="region"
           aria-roledescription="carousel"
@@ -248,7 +234,7 @@ const CarouselNext = React.forwardRef<
 CarouselNext.displayName = "CarouselNext";
 
 const CarouselDots = React.forwardRef<
-  HTMLButtonElement,
+  HTMLDivElement,
   React.ComponentProps<typeof Button>
 >(({ className, ...props }, ref) => {
   const { api } = useCarousel();
@@ -259,13 +245,13 @@ const CarouselDots = React.forwardRef<
 
     setCurrent(api.selectedScrollSnap() + 1);
 
-    api.on("pointerUp", () => {
+    api.on("select", () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
   }, [api]);
 
   return (
-    <div className="mt-3 flex w-full items-center justify-center">
+    <div ref={ref} className="mt-3 flex w-full items-center justify-center">
       {api?.scrollSnapList().map((n, idx) => (
         <button
           onClick={() => {
@@ -311,9 +297,9 @@ export const ArrowIcon = (props: React.ComponentProps<"svg">) => (
     <path
       d="M15 7L10 12L15 17"
       stroke="#000000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );

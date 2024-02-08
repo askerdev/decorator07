@@ -1,5 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import { ComponentProps, useState } from "react";
+import {
+  ComponentProps,
+  Dispatch,
+  KeyboardEventHandler,
+  SetStateAction,
+  useState,
+} from "react";
 import { TAssortment } from "./assortment";
 import { cn } from "@/utils";
 import { Icons } from "./icons";
@@ -8,12 +14,14 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { Button } from "@/components/Button";
 import {
   Carousel,
+  CarouselApi,
   CarouselContent,
   CarouselDots,
   CarouselItem,
 } from "@/components/Carousel";
 import { v4 as uuid } from "uuid";
 import { useFormModal } from "@/state/FormModalContenxt";
+import { UseEmblaCarouselType } from "embla-carousel-react";
 
 type ItemProps = ComponentProps<"div"> & TAssortment;
 
@@ -94,7 +102,10 @@ const DetailsContentDesktop = ({
   title,
   properties,
   description,
-}: Omit<TAssortment, "price">) => {
+  setApi,
+}: Omit<TAssortment, "price"> & {
+  setApi: Dispatch<SetStateAction<UseEmblaCarouselType["1"] | undefined>>;
+}) => {
   const { open } = useFormModal();
 
   return (
@@ -113,7 +124,7 @@ const DetailsContentDesktop = ({
         </svg>
       </Dialog.Close>
 
-      <Carousel className="h-full w-full">
+      <Carousel setApi={setApi} className="h-full w-full">
         <CarouselContent>
           {images.map((src) => (
             <CarouselItem key={uuid()}>
@@ -164,6 +175,17 @@ const Details = ({
   properties,
   description,
 }: Omit<TAssortment, "price">) => {
+  const [api, setApi] = useState<CarouselApi>();
+
+  const handleKeys: KeyboardEventHandler<HTMLDivElement> = (e) => {
+    if (e.key === "ArrowLeft") {
+      api?.scrollPrev();
+    }
+    if (e.key === "ArrowRight") {
+      api?.scrollNext();
+    }
+  };
+
   return (
     <Dialog.Root>
       <DialogTrigger className="absolute right-5 top-5 w-max rounded-[180px] bg-white px-6 py-2 text-sm font-semibold text-black shadow-none">
@@ -171,8 +193,10 @@ const Details = ({
       </DialogTrigger>
       <Dialog.Portal>
         <Dialog.Overlay className="fixed left-0 top-0 z-50 h-screen w-full bg-black bg-opacity-30" />
-
-        <Dialog.Content className="fixed left-1/2 top-1/2 z-50 flex w-[280px] max-w-[850px] -translate-x-1/2 -translate-y-1/2 items-center justify-center lg:w-full">
+        <Dialog.Content
+          onKeyUp={handleKeys}
+          className="fixed left-1/2 top-1/2 z-50 flex w-[280px] max-w-[850px] -translate-x-1/2 -translate-y-1/2 items-center justify-center lg:w-full"
+        >
           <DetailsContentMobile
             images={images}
             title={title}
@@ -180,6 +204,7 @@ const Details = ({
             description={description}
           />
           <DetailsContentDesktop
+            setApi={setApi}
             images={images}
             title={title}
             properties={properties}
