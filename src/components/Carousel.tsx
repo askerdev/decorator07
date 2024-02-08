@@ -264,10 +264,6 @@ const CarouselDots = React.forwardRef<
     });
   }, [api]);
 
-  React.useEffect(() => {
-    console.log(current);
-  }, [current]);
-
   return (
     <div className="mt-3 flex w-full items-center justify-center">
       {api?.scrollSnapList().map((n, idx) => (

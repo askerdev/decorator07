@@ -141,19 +141,19 @@ export const assortment: JSX.Element[] = [
     ]}
     description="Мы предлагаем керамогранит  от брендов  Италон  и Colizeum  от мелко-форматных до крупно-форматных, с высокой степенью износостойкости и разнообразными типами поверхностей: глянцевые, патинированные структурированные и матовые, с разными текстурами : под мрамор, под бетон, с имитацией камня и оникса. Так же в салоне вы можете взять на примерку образцы керамогранита."
   />,
-  // 5 Люстры и светильники сhandeliers
+  // 5 Люстры и светильники chandeliers
   <AssortmentItemSmall
     key={uuid()}
     title="Люстры и светильники"
     images={[
-      "/images/assortment/сhandeliers/tild3164-3331-4538-b766-343439343231__odeon.jpg",
-      "/images/assortment/сhandeliers/tild6331-6537-4264-b932-333639343731_st_luce2.jpg",
-      "/images/assortment/сhandeliers/tild3131-6534-4563-b535-386436646230__2.jpg",
-      "/images/assortment/сhandeliers/tild3438-3039-4534-a162-356535323637__3.jpg",
-      "/images/assortment/сhandeliers/tild3462-6466-4331-b839-643438613664_st_luce.jpg",
-      "/images/assortment/сhandeliers/tild6661-6563-4538-b361-393230643563_photo.jpg",
-      "/images/assortment/сhandeliers/tild3866-3862-4463-b539-373265313230_St_Luce7.jpg",
-      "/images/assortment/сhandeliers/tild6131-3166-4431-b966-316663386463_ST_LUCE_1.jpg",
+      "/images/assortment/chandeliers/tild3164-3331-4538-b766-343439343231__odeon.jpg",
+      "/images/assortment/chandeliers/tild6331-6537-4264-b932-333639343731_st_luce2.jpg",
+      "/images/assortment/chandeliers/tild3131-6534-4563-b535-386436646230__2.jpg",
+      "/images/assortment/chandeliers/tild3438-3039-4534-a162-356535323637__3.jpg",
+      "/images/assortment/chandeliers/tild3462-6466-4331-b839-643438613664_st_luce.jpg",
+      "/images/assortment/chandeliers/tild6661-6563-4538-b361-393230643563_photo.jpg",
+      "/images/assortment/chandeliers/tild3866-3862-4463-b539-373265313230_St_Luce7.jpg",
+      "/images/assortment/chandeliers/tild6131-3166-4431-b966-316663386463_ST_LUCE_1.jpg",
     ]}
     price={1500}
     properties={[
