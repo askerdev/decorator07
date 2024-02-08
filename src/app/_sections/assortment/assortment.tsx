@@ -79,67 +79,62 @@ export const assortment: JSX.Element[] = [
     ]}
     description="Краски Dulux европейского бренда и дизайнерская краска Хюгге от российских производителей включают в себя линейку красок разного функционала: для стен, фасадов, полов и лестниц, окон и дверей, радиаторов и заборов и даже подоконников!"
   />,
-  // 3 Фреска fresco
+  // 3 Ароматы для дома
   <AssortmentItemSmall
     key={uuid()}
-    title="Фреска"
+    title="Ароматы для дома"
     images={[
-      "/images/assortment/fresco/1.jpg",
-      "/images/assortment/fresco/2.jpg",
-      "/images/assortment/fresco/3.jpg",
-      "/images/assortment/fresco/4.jpg",
-      "/images/assortment/fresco/5.jpg",
-      "/images/assortment/fresco/6.jpg",
-      "/images/assortment/fresco/7.jpg",
-      "/images/assortment/fresco/8.jpg",
-      "/images/assortment/fresco/9.jpg",
-      "/images/assortment/fresco/10.jpg",
-      "/images/assortment/fresco/11.jpg",
-      "/images/assortment/fresco/12.jpg",
+      "/images/assortment/home_fragrances/d714ac17b7ca16f81ba7e8aa516912ad.jpg",
+      "/images/assortment/home_fragrances/gioia-spray-100ml-01-1000x1000.jpg",
+      "/images/assortment/home_fragrances/021a4a66a9000771dfe041f00e267cf8-1000x1000.jpg",
+      "/images/assortment/home_fragrances/BAOBAB_LIFESTYLE_SS2023-7sm-1000x1000.jpg",
+      "/images/assortment/home_fragrances/BAOBAB_PARISmalia_FW2023286sm-1000x1000.jpg",
+
+      "/images/assortment/home_fragrances/totem-feathers-touareg-1000x1000.jpg",
+      "/images/assortment/home_fragrances/Iris-1000x1000.jpg",
+      "/images/assortment/home_fragrances/1d6677fcb9a04189bde3a7a804132f83.jpg",
+      "/images/assortment/home_fragrances/266c8e5b99f6ac265ce8585938810ff1.jpg",
+      "/images/assortment/home_fragrances/8be05a327e6d718c1dbdd3fbe91f15ab.jpg",
     ]}
-    price={3500}
+    price={3600}
     properties={[
       {
-        title: "Натуральные материалы",
+        title: "Эксклюзивные ароматы",
       },
       {
-        title: "Долговечные и износостойкие",
+        title: "Высокий срок службы",
       },
       {
-        title: "Придают престиж дому",
+        title: "Эстетичность",
       },
     ]}
-    description="Это художественное бесшовное полотно, получается путем нанесения декоративной штукатурки на флизелиновое полотно и дорисовывается вручную художниками. Хотите выделить зону за изголовьем кровати , тв зону или обеденную группу- фреска-это отличный вариант.
-    "
+    description="В нашем салоне вы можете приобрести  эксклюзивные европейские арматы для дома Culti Milano, Baobab Collection, Villa Buti и Ladenac Milano в виде диффузоров, спреев, саше и ароматических свечей. Хотите привнести нотку изысканности в свой интерьер – дополните его нашими ароматами."
   />,
-  // 4 Керамогранит stoneware
+  // 4 Стеновые панели и лепнина stucco_molding
   <AssortmentItemSmall
     key={uuid()}
-    title="Керамогранит"
+    title="Стеновые панели и лепнина"
     images={[
-      "/images/assortment/stoneware/42420fda2246a0730e22c34ca96ff861.jpg",
-      "/images/assortment/stoneware/6f70833854388f059109a55ceae6649c.jpg",
-      "/images/assortment/stoneware/b06d4ed34d6a21f4a39b23ae3d3acef3.jpg",
-      "/images/assortment/stoneware/c58958c37ca3b7cd1ddb6540512b2994.jpg",
-      "/images/assortment/stoneware/f33be7db083bd3887f59760edd4bc2fe.jpeg",
-      "/images/assortment/stoneware/7e8dd243a2f946e4227fde38924480d2.jpg",
-      "/images/assortment/stoneware/78e432fdf66676edf1ce9fcc76ae7232.jpg",
-      "/images/assortment/stoneware/8ab7948be9501e37352a8d4f4fcf7467.jpg",
-      "/images/assortment/stoneware/fd5f21a1d6064c796306d07146b6d791.jpg",
+      "/images/assortment/stucco_molding/a879ab091e6e676c89e056d41b47f34f21901683_orac_nick_inspiration_book_2018_2_5b97b397d90fe.jpg",
+      "/images/assortment/stucco_molding/ad2c7283cec32dcd1bc62a1b55c9bbb32edb1872_new_classics_heritage_4_5dfa2da652a09.jpg",
+      "/images/assortment/stucco_molding/5126128474bcdbf90e5c754c3066d2ab.jpg",
+      "/images/assortment/stucco_molding/fbbce5512972c6bbe2c2904ed129fb19.jpg",
+      "/images/assortment/stucco_molding/f9025e372e83a44a7d7c6a8511599017.jpg",
+      "/images/assortment/stucco_molding/9cf71a0f8aedfab0788ee7eed24e7794.jpg",
     ]}
-    price={1980}
+    price={260}
     properties={[
       {
-        title: "Бренд Italon и Colizeum",
+        title: "Прочность и долговечность",
       },
       {
-        title: "Эстетичный внешний вид",
+        title: "Функциональность",
       },
       {
-        title: "Экологичность",
+        title: "Индивидуальность",
       },
     ]}
-    description="Мы предлагаем керамогранит  от брендов  Italon  и Colizeum  от мелко-форматных до крупно-форматных, с высокой степенью износостойкости и разнообразными типами поверхностей: глянцевые, патинированные структурированные и матовые, с разными текстурами : под мрамор, под бетон, с имитацией камня и оникса. Так же в салоне вы можете взять на примерку образцы керамогранита."
+    description="У нас вы можете приобрести карнизы, плинтусы , молдинги и стеновые панели из полиуретана и дюрополимера от Орак Декор, Европласта, Белла Декор. Изделия уже загрунтованы и готовы к покраске. Также вы можете заказать у нас стеновые панели из массива дерева от бренда Эссе в разных оттенках."
   />,
   // 5 Люстры и светильники chandeliers
   <AssortmentItemSmall
@@ -197,31 +192,34 @@ export const assortment: JSX.Element[] = [
     ]}
     description="В салоне представлена широкая линейка напольных покрытий: Косвик, Эссе и СВМ. Инженерная доска, паркетная доска и ламинат отвечают самым высоким стандартам качества, они  практичны в использовании и очень красивы."
   />,
-  // 7 Стеновые панели и лепнина stucco_molding
+  // 7 Керамогранит stoneware
   <AssortmentItemBig
     key={uuid()}
-    title="Стеновые панели и лепнина"
+    title="Керамогранит"
     images={[
-      "/images/assortment/stucco_molding/a879ab091e6e676c89e056d41b47f34f21901683_orac_nick_inspiration_book_2018_2_5b97b397d90fe.jpg",
-      "/images/assortment/stucco_molding/ad2c7283cec32dcd1bc62a1b55c9bbb32edb1872_new_classics_heritage_4_5dfa2da652a09.jpg",
-      "/images/assortment/stucco_molding/5126128474bcdbf90e5c754c3066d2ab.jpg",
-      "/images/assortment/stucco_molding/fbbce5512972c6bbe2c2904ed129fb19.jpg",
-      "/images/assortment/stucco_molding/f9025e372e83a44a7d7c6a8511599017.jpg",
-      "/images/assortment/stucco_molding/9cf71a0f8aedfab0788ee7eed24e7794.jpg",
+      "/images/assortment/stoneware/42420fda2246a0730e22c34ca96ff861.jpg",
+      "/images/assortment/stoneware/6f70833854388f059109a55ceae6649c.jpg",
+      "/images/assortment/stoneware/b06d4ed34d6a21f4a39b23ae3d3acef3.jpg",
+      "/images/assortment/stoneware/c58958c37ca3b7cd1ddb6540512b2994.jpg",
+      "/images/assortment/stoneware/f33be7db083bd3887f59760edd4bc2fe.jpeg",
+      "/images/assortment/stoneware/7e8dd243a2f946e4227fde38924480d2.jpg",
+      "/images/assortment/stoneware/78e432fdf66676edf1ce9fcc76ae7232.jpg",
+      "/images/assortment/stoneware/8ab7948be9501e37352a8d4f4fcf7467.jpg",
+      "/images/assortment/stoneware/fd5f21a1d6064c796306d07146b6d791.jpg",
     ]}
-    price={260}
+    price={1980}
     properties={[
       {
-        title: "Прочность и долговечность",
+        title: "Бренд Italon и Colizeum",
       },
       {
-        title: "Функциональность",
+        title: "Эстетичный внешний вид",
       },
       {
-        title: "Индивидуальность",
+        title: "Экологичность",
       },
     ]}
-    description="У нас вы можете приобрести карнизы, плинтусы , молдинги и стеновые панели из полиуретана и дюрополимера от Орак Декор, Европласта, Белла Декор. Изделия уже загрунтованы и готовы к покраске. Также вы можете заказать у нас стеновые панели из массива дерева от бренда Эссе в разных оттенках."
+    description="Мы предлагаем керамогранит  от брендов  Italon  и Colizeum  от мелко-форматных до крупно-форматных, с высокой степенью износостойкости и разнообразными типами поверхностей: глянцевые, патинированные структурированные и матовые, с разными текстурами : под мрамор, под бетон, с имитацией камня и оникса. Так же в салоне вы можете взять на примерку образцы керамогранита."
   />,
   // 8 Двери Doors
   <AssortmentItemBig
@@ -254,34 +252,37 @@ export const assortment: JSX.Element[] = [
     ]}
     description="Мы являемся дилерами фирмы Миксал, производителя дверей скрытого монтажа и перегородок, а также гардеробных систем , профили и каркас из высококачественного анодированного алюминия. Полотна можно заказать из шпона, стекла, окрашенного гипсокартона."
   />,
-  // 9 Ароматы для дома
+  // 9 Фреска fresco
   <AssortmentItemBig
     key={uuid()}
-    title="Ароматы для дома"
+    title="Фреска"
     images={[
-      "/images/assortment/home_fragrances/gioia-spray-100ml-01-1000x1000.jpg",
-      "/images/assortment/home_fragrances/021a4a66a9000771dfe041f00e267cf8-1000x1000.jpg",
-      "/images/assortment/home_fragrances/BAOBAB_LIFESTYLE_SS2023-7sm-1000x1000.jpg",
-      "/images/assortment/home_fragrances/BAOBAB_PARISmalia_FW2023286sm-1000x1000.jpg",
-      "/images/assortment/home_fragrances/d714ac17b7ca16f81ba7e8aa516912ad.jpg",
-      "/images/assortment/home_fragrances/totem-feathers-touareg-1000x1000.jpg",
-      "/images/assortment/home_fragrances/Iris-1000x1000.jpg",
-      "/images/assortment/home_fragrances/1d6677fcb9a04189bde3a7a804132f83.jpg",
-      "/images/assortment/home_fragrances/266c8e5b99f6ac265ce8585938810ff1.jpg",
-      "/images/assortment/home_fragrances/8be05a327e6d718c1dbdd3fbe91f15ab.jpg",
+      "/images/assortment/fresco/1.jpg",
+      "/images/assortment/fresco/2.jpg",
+      "/images/assortment/fresco/3.jpg",
+      "/images/assortment/fresco/4.jpg",
+      "/images/assortment/fresco/5.jpg",
+      "/images/assortment/fresco/6.jpg",
+      "/images/assortment/fresco/7.jpg",
+      "/images/assortment/fresco/8.jpg",
+      "/images/assortment/fresco/9.jpg",
+      "/images/assortment/fresco/10.jpg",
+      "/images/assortment/fresco/11.jpg",
+      "/images/assortment/fresco/12.jpg",
     ]}
-    price={3600}
+    price={3500}
     properties={[
       {
-        title: "Эксклюзивные европейские ароматы",
+        title: "Натуральные материалы",
       },
       {
-        title: "Высокий срок службы",
+        title: "Долговечные и износостойкие",
       },
       {
-        title: "Эстетическая привлекательность",
+        title: "Придают престиж дому",
       },
     ]}
-    description="В нашем салоне вы можете приобрести  эксклюзивные европейские арматы для дома Culti Milano, Baobab Collection, Villa Buti и Ladenac Milano в виде диффузоров, спреев, саше и ароматических свечей. Хотите привнести нотку изысканности в свой интерьер – дополните его нашими ароматами."
+    description="Это художественное бесшовное полотно, получается путем нанесения декоративной штукатурки на флизелиновое полотно и дорисовывается вручную художниками. Хотите выделить зону за изголовьем кровати , тв зону или обеденную группу- фреска-это отличный вариант.
+    "
   />,
 ];
