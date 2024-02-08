@@ -22,7 +22,7 @@ export const MainSection = () => {
               <p className="text-lg lg:text-xl">
                 «Декоратор» — это 15 категорий материалов от керамогранита до
                 лепнины, а также помощь дизайнеров, чтобы создать интерьеры
-                своей мечты
+                твоей мечты
               </p>
             </div>
             <Button className="z-40 cursor-pointer" onClick={open}>

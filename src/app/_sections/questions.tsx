@@ -20,35 +20,18 @@ export const QuestionsSection = () => {
           <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-between lg:gap-8">
             <div className="flex flex-col gap-8">
               <h2 className="max-w-[561px] text-center text-2xl font-bold text-black sm:text-4xl lg:text-left xl:text-[42px] xl:leading-[54px]">
-                ПОМОЖЕМ С ДИЗАЙНОМ, ПОДБОРОМ МАТЕРИАЛОВ И ЛЮБЫМИ ВОПРОСАМИ
+                НАША КОМАНДА
               </h2>
               <Button onClick={open} className="hidden bg-white lg:flex">
                 Задать вопрос
               </Button>
             </div>
             <div className="flex gap-6 md:gap-10">
-              <div className="flex flex-col items-start gap-5">
-                <img
-                  className="w-[138px] sm:w-[182px] xl:w-[260px]"
-                  src="/images/albina.png"
-                  alt="Альбина"
-                />
-                <div>
-                  <h4 className="font-bold sm:text-lg">Альбина</h4>
-                  <p>Консультант-дизайнер</p>
-                </div>
-              </div>
-              <div className="flex flex-col items-start gap-5">
-                <img
-                  className="w-[138px] sm:w-[182px] xl:w-[260px]"
-                  src="/images/alima.png"
-                  alt="Алима"
-                />
-                <div>
-                  <h4 className="font-bold sm:text-lg">Алима</h4>
-                  <p>Консультант-дизайнер</p>
-                </div>
-              </div>
+              <img
+                className="w-full max-w-[560px] rounded-xl border-2 border-white"
+                src="/images/team.jpg"
+                alt="Альбина"
+              />
             </div>
           </div>
           <Button

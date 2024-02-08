@@ -19,6 +19,7 @@ export const assortment: JSX.Element[] = [
     key={uuid()}
     title="Обои"
     images={[
+      "/images/assortment/wallpapers/15.jpg",
       "/images/assortment/wallpapers/1.jpg",
       "/images/assortment/wallpapers/2.jpg",
       "/images/assortment/wallpapers/3.jpg",
@@ -33,7 +34,6 @@ export const assortment: JSX.Element[] = [
       "/images/assortment/wallpapers/12.jpg",
       "/images/assortment/wallpapers/13.jpg",
       "/images/assortment/wallpapers/14.jpg",
-      "/images/assortment/wallpapers/15.jpg",
     ]}
     price={2500}
     properties={[
@@ -127,10 +127,10 @@ export const assortment: JSX.Element[] = [
       "/images/assortment/stoneware/8ab7948be9501e37352a8d4f4fcf7467.jpg",
       "/images/assortment/stoneware/fd5f21a1d6064c796306d07146b6d791.jpg",
     ]}
-    price={800}
+    price={1980}
     properties={[
       {
-        title: "Бренд Италон и Colizeum",
+        title: "Бренд Italon и Colizeum",
       },
       {
         title: "Эстетичный внешний вид",
@@ -139,7 +139,7 @@ export const assortment: JSX.Element[] = [
         title: "Экологичность",
       },
     ]}
-    description="Мы предлагаем керамогранит  от брендов  Италон  и Colizeum  от мелко-форматных до крупно-форматных, с высокой степенью износостойкости и разнообразными типами поверхностей: глянцевые, патинированные структурированные и матовые, с разными текстурами : под мрамор, под бетон, с имитацией камня и оникса. Так же в салоне вы можете взять на примерку образцы керамогранита."
+    description="Мы предлагаем керамогранит  от брендов  Italon  и Colizeum  от мелко-форматных до крупно-форматных, с высокой степенью износостойкости и разнообразными типами поверхностей: глянцевые, патинированные структурированные и матовые, с разными текстурами : под мрамор, под бетон, с имитацией камня и оникса. Так же в салоне вы можете взять на примерку образцы керамогранита."
   />,
   // 5 Люстры и светильники chandeliers
   <AssortmentItemSmall
@@ -169,10 +169,10 @@ export const assortment: JSX.Element[] = [
     ]}
     description="Люстры от лучших европейских брендов: Майтони, Одеон, Кристалл Люкс, Фаворит, Ньюпорт, Эсте Лючи, Кинк лайт, Лайтстар, Дивинаре в наличии и на заказ. Мы поможем вам подобрать под ваш интерьер самый походящий вариант."
   />,
-  // 6 Инженерная доска engineering_board
+  // 6 Напольные покрытия engineering_board
   <AssortmentItemSmall
     key={uuid()}
-    title="Инженерная доска"
+    title="Напольные покрытия"
     images={[
       "/images/assortment/engineering_board/Exotic_American-Walnut_trad_v2.jpg",
       "/images/assortment/engineering_board/French-Riviere_h.jpg",
@@ -197,10 +197,10 @@ export const assortment: JSX.Element[] = [
     ]}
     description="В салоне представлена широкая линейка напольных покрытий: Косвик, Эссе и СВМ. Инженерная доска, паркетная доска и ламинат отвечают самым высоким стандартам качества, они  практичны в использовании и очень красивы."
   />,
-  // 7 Лепнина stucco_molding
+  // 7 Стеновые панели и лепнина stucco_molding
   <AssortmentItemBig
     key={uuid()}
-    title="Лепнина"
+    title="Стеновые панели и лепнина"
     images={[
       "/images/assortment/stucco_molding/a879ab091e6e676c89e056d41b47f34f21901683_orac_nick_inspiration_book_2018_2_5b97b397d90fe.jpg",
       "/images/assortment/stucco_molding/ad2c7283cec32dcd1bc62a1b55c9bbb32edb1872_new_classics_heritage_4_5dfa2da652a09.jpg",
@@ -252,12 +252,12 @@ export const assortment: JSX.Element[] = [
         title: "Высокое качество",
       },
     ]}
-    description="Мы являемся дилерами фирмы Миксал, производителя дверей скрытого монтажа и перегородок, а также гардеробных систем , профили и каркас из высококачественного анодированного алюминия, полотна можно заказать из шпона, стекла, окрашенного гипсокартона."
+    description="Мы являемся дилерами фирмы Миксал, производителя дверей скрытого монтажа и перегородок, а также гардеробных систем , профили и каркас из высококачественного анодированного алюминия. Полотна можно заказать из шпона, стекла, окрашенного гипсокартона."
   />,
-  // 9 Ароматы для дома.
+  // 9 Ароматы для дома
   <AssortmentItemBig
     key={uuid()}
-    title="Ароматы для дома."
+    title="Ароматы для дома"
     images={[
       "/images/assortment/home_fragrances/gioia-spray-100ml-01-1000x1000.jpg",
       "/images/assortment/home_fragrances/021a4a66a9000771dfe041f00e267cf8-1000x1000.jpg",
