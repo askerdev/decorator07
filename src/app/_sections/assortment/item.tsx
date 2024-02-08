@@ -223,7 +223,7 @@ export const AssortmentItemBig = ({
         <span>{Icons.arrowsLight}</span>
         <span>{properties[1].title}</span>
       </p>
-      <div className="flex w-full justify-between text-lg font-bold md:text-3xl">
+      <div className="flex w-full flex-col justify-between text-lg font-bold md:flex-row md:text-3xl">
         <span>{title}</span>
         <span>От {price} ₽</span>
       </div>
