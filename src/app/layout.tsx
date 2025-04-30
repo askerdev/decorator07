@@ -4,7 +4,6 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 // import { GoogleAnalytics } from "@next/third-parties/google";
-import Script from "next/script";
 import { FormModalContextProvider } from "@/state/FormModalContenxt";
 
 export const metadata: Metadata = {
@@ -26,9 +25,6 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: Readonly<PropsWithChildren>) => (
   <html lang="ru">
-    <head>
-      <Script src="https://smtpjs.com/v3/smtp.js"></Script>
-    </head>
     <body
       className={`${GilroyFont.className} w-[100vw] overflow-x-hidden scroll-smooth`}
     >

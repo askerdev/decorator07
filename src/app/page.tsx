@@ -11,9 +11,22 @@ import { ReviewsSection } from "./_sections/reviews";
 import { FormModal } from "@/components/Modal";
 import { Menu } from "@/components/Menu";
 import { useFormModal } from "@/state/FormModalContenxt";
+import { useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
 const Page = () => {
   const { isOpen, setOpen } = useFormModal();
+
+  useEffect(() => {
+    emailjs.init({
+      publicKey: process.env.NEXT_PUBLIC_EMAIL_JS,
+      blockHeadless: true,
+      limitRate: {
+        id: "app",
+        throttle: 10000,
+      },
+    });
+  }, []);
 
   return (
     <>
